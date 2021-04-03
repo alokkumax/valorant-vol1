@@ -46,6 +46,12 @@ flutter:
    - assets/image_02.jpg
    - assets/image_03.jpg
    - assets/image_04.jpg
+   - assets/jett1.jpg
+   - assets/reyna.jpg
+   - assets/raze.jpg
+   - assets/finix.jpg
+   -
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -61,6 +67,9 @@ flutter:
   # example:
 
   fonts:
+    - family: Valorant-Font
+      fonts:
+        - asset: assets/Valorant-Font.ttf
     - family: SF-Pro-Text-Regular
       fonts:
         - asset: assets/SF-Pro-Text-Regular.otf

@@ -29,6 +29,7 @@ class _MyAppState extends State<MyApp> {
     });
 
     return Container(
+
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
@@ -45,78 +46,47 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 12.0, right: 12.0, top: 30.0, bottom: 8.0),
+                    left: 12.0, right: 12.0, top: 45, bottom: 8.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    IconButton(
-                      icon: Icon(
-                        CustomIcons.menu,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                        size: 30.0,
-                      ),
-                      onPressed: () {},
-                    )
+                    Text("Valorant",style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28,
+                      fontFamily: "Valorant-Font",
+                      letterSpacing: 1.0,
+                    )),
+
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 10,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Trending",
+                    Text("Agents",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 46.0,
+                          fontSize: 40,
                           fontFamily: "Calibre-Semibold",
                           letterSpacing: 1.0,
                         )),
-                    IconButton(
-                      icon: Icon(
-                        CustomIcons.option,
-                        size: 12.0,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {},
-                    )
+                    // IconButton(
+                    //   icon: Icon(
+                    //     CustomIcons.option,
+                    //     size: 12.0,
+                    //     color: Colors.white,
+                    //   ),
+                    //   onPressed: () {},
+                    // )
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 20.0),
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xFFff6e6e),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 22.0, vertical: 6.0),
-                          child: Text("Animated",
-                              style: TextStyle(color: Colors.white)),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 15.0,
-                    ),
-                    Text("25+ Stories",
-                        style: TextStyle(color: Colors.blueAccent))
-                  ],
-                ),
-              ),
+
               Stack(
                 children: <Widget>[
                   CardScrollWidget(currentPage),
@@ -137,10 +107,10 @@ class _MyAppState extends State<MyApp> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Favourite",
+                    Text("Maps",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 46.0,
+                          fontSize: 40.0,
                           fontFamily: "Calibre-Semibold",
                           letterSpacing: 1.0,
                         )),
@@ -190,8 +160,9 @@ class _MyAppState extends State<MyApp> {
                     padding: EdgeInsets.only(left: 18.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
-                      child: Image.asset("assets/image_02.jpg",
+                      child: Image.asset("assets/imrs.webp",
                           width: 296.0, height: 222.0),
+
                     ),
                   )
                 ],
@@ -272,25 +243,26 @@ class CardScrollWidget extends StatelessWidget {
                               child: Text(title[i],
                                   style: TextStyle(
                                       color: Colors.white,
+                                      fontWeight: FontWeight.bold,
                                       fontSize: 25.0,
-                                      fontFamily: "SF-Pro-Text-Regular")),
+                                      fontFamily: "Valorant-Font")),
                             ),
                             SizedBox(
                               height: 10.0,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 12.0, bottom: 12.0),
-                              child: Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 22.0, vertical: 6.0),
-                                decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
-                                    borderRadius: BorderRadius.circular(20.0)),
-                                child: Text("Read Later",
-                                    style: TextStyle(color: Colors.white)),
-                              ),
-                            )
+                            // Padding(
+                            //   padding: const EdgeInsets.only(
+                            //       left: 12.0, bottom: 12.0),
+                            //   child: Container(
+                            //     padding: EdgeInsets.symmetric(
+                            //         horizontal: 22.0, vertical: 6.0),
+                            //     decoration: BoxDecoration(
+                            //         color: Colors.blueAccent,
+                            //         borderRadius: BorderRadius.circular(20.0)),
+                            //     child: Text("",
+                            //         style: TextStyle(color: Colors.white)),
+                            //   ),
+                            // )
                           ],
                         ),
                       )
